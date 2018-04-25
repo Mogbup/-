@@ -2,12 +2,20 @@
 #define SCRAP_WINDOW_H
 
 #include <QMainWindow>
-#include <QString>
-#include <QMessageBox>
-#include <QtDebug>
-#include <QSqlDatabase>
-#include <QSqlQuery>
-#include <QSql>
+
+#include <QString> // стд строка
+#include <QMessageBox> // стд окно сообщений
+#include <QtDebug> // стд вывод в консоль
+
+#include <QSqlDatabase> // сама бд
+#include <QSqlQuery> // запрос
+#include <QSql> // язык
+
+#include <QHBoxLayout> // горизонтальное расположение
+#include <QVBoxLayout> // вертикальное расположение
+#include <QPushButton> // кнопка
+#include <QTextEdit> // текстовое поле
+
 
 namespace Ui {
 class scrap_window;
@@ -24,6 +32,7 @@ public:
 private:
     Ui::scrap_window *ui;
     QSqlDatabase scrap_db;
+
 };
 
 #endif // SCRAP_WINDOW_H

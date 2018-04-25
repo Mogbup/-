@@ -15,11 +15,11 @@ scrap_window::scrap_window(QWidget *parent) :
     scrap_db.setDatabaseName("scrap");
     scrap_db.setUserName("mogbup_4");
     scrap_db.setPassword("1234");
-    if (!scrap_db.open()){
-        qDebug() << scrap_db.lastError().text();
+    if (!scrap_db.open()){ // если не открылась
+        qDebug() << scrap_db.lastError().text(); // вывести ошибку
     }
-    else{
-        qDebug() << "БД открыта";
+    else{ // иначе
+        qDebug() << "БД открыта"; // вывести сообщение об успехе
     }
 }
 
