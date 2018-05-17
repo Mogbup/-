@@ -25,10 +25,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        scrap_window.cpp
+        scrap_window.cpp \
+    my_object.cpp \
+    my_material.cpp \
+    my_color.cpp \
+    my_style.cpp \
+    my_class.cpp \
+    my_tool.cpp
 
 HEADERS += \
-        scrap_window.h
+        scrap_window.h \
+    my_object.h \
+    my_material.h \
+    my_color.h \
+    my_style.h \
+    my_class.h \
+    my_tool.h
 
 FORMS += \
         scrap_window.ui

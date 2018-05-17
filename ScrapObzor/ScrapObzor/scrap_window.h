@@ -1,9 +1,10 @@
 #ifndef SCRAP_WINDOW_H
 #define SCRAP_WINDOW_H
 
-#include <QMainWindow>
+#include "my_material.h"
+#include "my_tool.h"
 
-#include <QString> // стд строка
+#include <QMainWindow>
 #include <QMessageBox> // стд окно сообщений
 #include <QtDebug> // стд вывод в консоль
 
@@ -15,7 +16,6 @@
 #include <QVBoxLayout> // вертикальное расположение
 #include <QPushButton> // кнопка
 #include <QTextEdit> // текстовое поле
-
 
 namespace Ui {
 class scrap_window;
@@ -30,8 +30,13 @@ public:
     ~scrap_window();
 
 private:
-    Ui::scrap_window *ui;
-    QSqlDatabase scrap_db;
+    Ui::scrap_window *ui; // форма
+
+    QSqlDatabase scrap_db; // сама база данных
+
+    my_Object *new_one; // объект класса мой_объект для проверки;)
+
+
 
 };
 

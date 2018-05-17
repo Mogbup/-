@@ -21,6 +21,14 @@ scrap_window::scrap_window(QWidget *parent) :
     else{ // иначе
         qDebug() << "БД открыта"; // вывести сообщение об успехе
     }
+
+
+
+    new_one = new my_Object(23,"Объект");
+    qDebug() << new_one->id();
+    qDebug() << new_one->naming();
+
+    new_col = new my_Color(33,"Белый");
 }
 
 scrap_window::~scrap_window()
