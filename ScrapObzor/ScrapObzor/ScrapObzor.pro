@@ -31,7 +31,8 @@ SOURCES += \
     my_color.cpp \
     my_style.cpp \
     my_class.cpp \
-    my_tool.cpp
+    my_tool.cpp \
+    my_graph_object.cpp
 
 HEADERS += \
         scrap_window.h \
@@ -40,7 +41,10 @@ HEADERS += \
     my_color.h \
     my_style.h \
     my_class.h \
-    my_tool.h
+    my_tool.h \
+    my_graph_object.h
 
 FORMS += \
         scrap_window.ui
+
+DISTFILES +=
